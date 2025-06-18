@@ -24,8 +24,16 @@
     "audit",
     "risk-assessment"
   ],
-  "author": "",
+  "author": "mlot.ai",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/incrediblecrab/nuclear-option.git"
+  },
+  "bugs": {
+    "url": "https://github.com/incrediblecrab/nuclear-option/issues"
+  },
+  "homepage": "https://github.com/incrediblecrab/nuclear-option#readme",
   "dependencies": {
     "@babel/parser": "^7.24.0",
     "@babel/traverse": "^7.24.0",

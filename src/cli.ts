@@ -14,7 +14,8 @@ const program = new Command();
 program
   .name('nuclear-option')
   .description('Find critical vulnerabilities and single points of failure in your codebase')
-  .version(version);
+  .version(version)
+  .addHelpText('after', '\nFor more information, visit: https://github.com/incrediblecrab/nuclear-option');
 
 program
   .command('scan [path]')
