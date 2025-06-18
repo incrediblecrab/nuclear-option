@@ -1,0 +1,106 @@
+# Nuclear Option Configuration Example
+
+# Vulnerability detection rules
+rules:
+  # Single point of authentication
+  - id: single-auth-point
+    severity: critical
+    threshold: 90
+    enabled: true
+    
+  # God objects with too many responsibilities  
+  - id: god-object
+    severity: high
+    metrics:
+      max-responsibilities: 10
+      max-dependencies: 20
+      max-lines: 500
+      
+  # Hardcoded secrets
+  - id: hardcoded-secrets
+    severity: critical
+    patterns:
+      - 'api[_-]?key'
+      - 'secret'
+      - 'password'
+      - 'token'
+      
+  # Circular dependencies
+  - id: circular-deps
+    severity: medium
+    max-chain-length: 3
+
+# Files and directories to exclude from analysis
+exclusions:
+  - path: "**/test/**"
+  - path: "**/tests/**"
+  - path: "**/mocks/**"
+  - path: "**/__tests__/**"
+  - path: "**/node_modules/**"
+  - path: "**/*.test.{js,ts}"
+  - path: "**/*.spec.{js,ts}"
+
+# Scoring adjustments
+scoring:
+  # Multiply score based on component importance
+  multipliers:
+    auth: 1.5
+    payment: 1.5
+    database: 1.3
+    api: 1.2
+    
+  # Custom scoring for specific files
+  overrides:
+    - path: "src/core/auth.js"
+      min-score: 80
+    - path: "src/payment/**"
+      min-score: 85
+
+# Integration settings
+integrations:
+  # GitHub integration
+  github:
+    enabled: true
+    fail-on: critical
+    comment-on-pr: true
+    
+  # Slack notifications  
+  slack:
+    enabled: false
+    webhook: ${SLACK_WEBHOOK}
+    notify-on: critical
+    
+  # Custom webhooks
+  webhooks:
+    - url: ${SECURITY_WEBHOOK}
+      events: ["critical-found", "scan-complete"]
+
+# Reporting preferences
+reporting:
+  # Include code snippets in reports
+  include-code: true
+  
+  # Maximum number of issues to report
+  max-issues: 50
+  
+  # Group issues by
+  group-by: severity # or 'component', 'type'
+  
+  # Report formats to generate
+  formats:
+    - text
+    - json
+    - html
+
+# Performance settings
+performance:
+  # Maximum workers for parallel analysis
+  max-workers: 4
+  
+  # Timeout for individual file analysis (ms)
+  file-timeout: 30000
+  
+  # Cache analysis results
+  cache:
+    enabled: true
+    ttl: 3600 # seconds
