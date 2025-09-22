@@ -1,12 +1,18 @@
 {
   "name": "nuclear-option",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find the Jenga blocks in your codebase - identify critical vulnerabilities and single points of failure",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
     "nuclear-option": "./dist/cli.js"
   },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
@@ -41,7 +47,7 @@
     "commander": "^12.0.0",
     "glob": "^10.3.10",
     "js-yaml": "^4.1.0",
-    "madge": "^6.1.0"
+    "madge": "^8.0.0"
   },
   "devDependencies": {
     "@types/babel__traverse": "^7.20.5",
