@@ -1,10 +1,11 @@
 # Nuclear Option 🔍💥
 
+![npm version](https://img.shields.io/npm/v/nuclear-option)
+![MLoT](https://img.shields.io/badge/MLoT-ai-blue)
+
 > Find the Jenga blocks in your codebase - identify critical vulnerabilities and single points of failure before they bring down your entire system.
 
-[![npm version](https://badge.fury.io/js/nuclear-option.svg)](https://badge.fury.io/js/nuclear-option)
-[![GitHub](https://img.shields.io/github/license/incrediblecrab/nuclear-option)](https://github.com/incrediblecrab/nuclear-option/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/incrediblecrab/nuclear-option)](https://github.com/incrediblecrab/nuclear-option/issues)
+![Demo](https://raw.githubusercontent.com/incrediblecrab/Packages-and-Extensions-Media/main/nuclear-option.gif)
 
 ## What is Nuclear Option?
 
@@ -107,6 +108,20 @@ npm start -- scan /path/to/your/project
 ## Author
 
 Created by [mlot.ai](https://mlot.ai) - AI-powered development tools and security solutions.
+
+## License
+
+## Resources
+
+- 📺 [Watch Demo Video](https://youtu.be/7CACK-tGWIw)
+- 🌐 [Visit MLoT Page](https://mlot.ai/nuclear-option/)
+- 📦 [View on GitHub](https://github.com/incrediblecrab/nuclear-option)
+- 🔒 [Privacy Policy](https://mlot.ai/privacy)
+
+## Publisher
+
+**Max's Lab of Things**
+Visit [mlot.ai](https://mlot.ai/)
 
 ## License
 

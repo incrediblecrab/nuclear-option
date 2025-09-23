@@ -1,6 +1,6 @@
 {
   "name": "nuclear-option",
-  "version": "0.1.1",
+  "version": "1.5.0",
   "description": "Find the Jenga blocks in your codebase - identify critical vulnerabilities and single points of failure",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -30,7 +30,10 @@
     "audit",
     "risk-assessment"
   ],
-  "author": "mlot.ai",
+  "author": {
+    "name": "Max Marquardt",
+    "url": "https://mlot.ai"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -39,7 +42,7 @@
   "bugs": {
     "url": "https://github.com/incrediblecrab/nuclear-option/issues"
   },
-  "homepage": "https://github.com/incrediblecrab/nuclear-option#readme",
+  "homepage": "https://mlot.ai/",
   "dependencies": {
     "@babel/parser": "^7.24.0",
     "@babel/traverse": "^7.24.0",
