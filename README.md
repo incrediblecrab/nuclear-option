@@ -5,7 +5,7 @@
 
 > Find the Jenga blocks in your codebase - identify critical vulnerabilities and single points of failure before they bring down your entire system.
 
-![Demo](https://raw.githubusercontent.com/incrediblecrab/Packages-and-Extensions-Media/main/gifs/nuclear-option.gif)
+![Demo](https://raw.githubusercontent.com/incrediblecrab/mlot-developer-media/main/gifs/nuclear-option.gif)
 
 ## What is Nuclear Option?
 
