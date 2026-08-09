@@ -37,7 +37,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/incrediblecrab/nuclear-option.git"
+    "url": "git+https://github.com/incrediblecrab/nuclear-option.git"
   },
   "bugs": {
     "url": "https://github.com/incrediblecrab/nuclear-option/issues"
