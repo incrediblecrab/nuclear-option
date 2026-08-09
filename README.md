@@ -24,15 +24,6 @@ Nuclear Option is a security analysis tool that goes beyond traditional vulnerab
 ```bash
 # Install globally from npm
 npm install -g nuclear-option
-
-# Or install from GitHub
-npm install -g https://github.com/incrediblecrab/nuclear-option.git
-
-# Or clone and build locally
-git clone https://github.com/incrediblecrab/nuclear-option.git
-cd nuclear-option
-npm install && npm run build
-npm link  # Make available globally
 ```
 
 ## Quick Start
@@ -77,45 +68,10 @@ Recent security incidents have shown that attackers don't need to find many vuln
 
 See [NUCLEAR_OPTION_IMPLEMENTATION.md](./NUCLEAR_OPTION_IMPLEMENTATION.md) for detailed implementation plans and architecture.
 
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](https://github.com/incrediblecrab/nuclear-option/blob/main/CONTRIBUTING.md) for details.
-
-### Reporting Issues
-
-Found a bug or have a feature request? Please [open an issue](https://github.com/incrediblecrab/nuclear-option/issues) on GitHub.
-
-### Development
-
-```bash
-# Clone the repository
-git clone https://github.com/incrediblecrab/nuclear-option.git
-cd nuclear-option
-
-# Install dependencies
-npm install
-
-# Run tests
-npm test
-
-# Build the project
-npm run build
-
-# Test locally
-npm start -- scan /path/to/your/project
-```
-
-## Author
-
-Created by [mlot.ai](https://mlot.ai) - AI-powered development tools and security solutions.
-
-## License
-
 ## Resources
 
 - 📺 [Watch Demo Video](https://youtu.be/7CACK-tGWIw)
 - 🌐 [Visit MLoT Page](https://mlot.ai/nuclear-option/)
-- 📦 [View on GitHub](https://github.com/incrediblecrab/nuclear-option)
 - 🔒 [Privacy Policy](https://mlot.ai/privacy)
 
 ## Publisher
@@ -125,4 +81,4 @@ Visit [mlot.ai](https://mlot.ai/)
 
 ## License
 
-MIT License - see the [LICENSE](https://github.com/incrediblecrab/nuclear-option/blob/main/LICENSE) file for details.
+MIT

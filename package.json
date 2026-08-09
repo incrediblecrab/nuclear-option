@@ -1,6 +1,6 @@
 {
   "name": "nuclear-option",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Find the Jenga blocks in your codebase - identify critical vulnerabilities and single points of failure",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
