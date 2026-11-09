@@ -12,7 +12,7 @@ Thank you for your interest in contributing to Nuclear Option! 🎉
    ```
 3. **Install dependencies**:
    ```bash
-   npm install
+   pnpm install
    ```
 4. **Run tests** to ensure everything works:
    ```bash

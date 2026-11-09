@@ -77,7 +77,7 @@ console.log(result.summary.total);
 ## Development
 
 ```bash
-npm install
+pnpm install
 npm run build
 npm test
 npm run lint
